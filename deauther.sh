@@ -68,6 +68,7 @@ do
 				sudo ifconfig $interfaz2 up >/dev/null
                 echo "Pulse CTRL+C para parar"
                 sudo mdk4 $interfaz2 b -s 1000
+		break
         ;;
 
         "salir") break 
