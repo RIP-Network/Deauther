@@ -58,7 +58,6 @@ do
         ;;
 
         "Beacon") echo "Has elegido Beacon $CONT "
-                read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlo1): " interfaz
                 sudo airmon-ng
                 read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
                 echo
