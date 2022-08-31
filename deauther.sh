@@ -30,7 +30,7 @@ do
                 sudo iwconfig
                 sudo airmon-ng
                 echo
-                read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlo1): " interfaz
+                read -p "[*] Escribe la Interfaz en modo monitor  (Ej: wlo1): " interfaz
                 sudo ifconfig $interfaz promisc >/dev/null
                 sudo airmon-ng start $interfaz >/dev/null
                 echo "Activando modo monitor "
@@ -43,7 +43,7 @@ do
         ;;
 
         "Deauth") echo "Has elegido Deauth $CONT " 
-                read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " opc1
+                read -p "[*] Escribe la Ip de Red local (Ej: 192.168.1.0 o 192.168.0.0): " opc1
                 sudo netdiscover -r $opc1/24 -P
                 echo
                 read -p "[*] Pon la IP del Objetivo: " ip
